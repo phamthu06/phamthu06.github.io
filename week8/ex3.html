@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rectangle Calculator</title>
+<script language="javascript">
+var width = parseFloat(prompt("Enter width of rectangle:"));
+var height = parseFloat(prompt("Enter height of rectangle:"));
+
+if(isNaN(width) || isNaN(height)) {
+    document.write("<font color='red'>Please enter valid numbers</font>");
+} else {
+    var perimeter = 2 * (width + height);
+    var area = width * height;
+    
+    document.write("<h2>Rectangle Calculation Results</h2>");
+    document.write("<p>Width: " + width + "</p>");
+    document.write("<p>Height: " + height + "</p>");
+    document.write("<p>Perimeter: " + perimeter + "</p>");
+    document.write("<p>Area: " + area + "</p>");
+}
+</script>
+</head>
+<body>
+</body>
+</html>
